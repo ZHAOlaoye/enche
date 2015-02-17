@@ -23,12 +23,12 @@ trans=function(mois,names,names1) {
 }
 
 
-B1<-read.csv2("1401.csv",sep=";")
-B2<-read.csv2("1402.csv",sep=";")
-B3<-read.csv2("1403.csv",sep=";")
-B4<-read.csv2("1404.csv",sep=";")
-B5<-read.csv2("1405.csv",sep=";")
-B6<-read.csv2("1406.csv",sep=";")
+B1<-read.csv2("1401.csv",sep="\t")
+B2<-read.csv2("1402.csv",sep="\t")
+B3<-read.csv2("1403.csv",sep="\t")
+B4<-read.csv2("1404.csv",sep="\t")
+B5<-read.csv2("1405.csv",sep="\t")
+B6<-read.csv2("1406.csv",sep="\t")
 
 
 
