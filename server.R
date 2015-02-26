@@ -88,10 +88,28 @@ shinyServer(function(input, output) {
   output$pos <- renderUI({
     if (input$position) {
       numericInput("Position",label=strong("la position vous souhaitez:"),
-                   value=0.00,min=1,max=7)    }
+                   value=2,min=1,max=7)    }
   })
   
+  output$change <- renderText({
+    
+    mois=datasetInput()
+    T=CPC(mois)
+    max=maxBid(T,input$Position)
+    max=sum(max)
+    max
+    
+  })
   
+  output$change1 <- renderText({
+    
+    mois=datasetInput()
+    T=CPC(mois)
+    min=minBid(T,input$Position)
+    min=sum(min)
+    min
+    
+  })
   
   
 })
